@@ -15,7 +15,7 @@ def show_message(win, title, message):
 
 # Створити новий архів
 def create_arhive(path, win):
-    # try:
+    try:
         # Переходимо у дерикторію, де знаходиться path,
         # для того щоб архів створився саме там
         p = os.path.dirname(path)
@@ -31,9 +31,9 @@ def create_arhive(path, win):
 
 
     # Якщо виникла помилка
-    # except:
-        # text = 'Виникла помилка. Перевірте правильність ввода данних.'
-        # show_message(win=win, message=text, title='Помилка')
+    except:
+        text = 'Виникла помилка. Перевірте правильність ввода данних.'
+        show_message(win=win, message=text, title='Помилка')
 
 
 # Розпакувати архів
